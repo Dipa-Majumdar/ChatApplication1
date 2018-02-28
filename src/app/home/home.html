@@ -40,10 +40,10 @@ div {
 <div>
   <form action="/action_page.php">
     <label for="fname" >Enter your Name</label>
-    <input type="text" id="fname" required name="firstname" [(ngModel)]="model.firstname" placeholder="Your name(without any space).." >
+    <input type="text" id="fname" required name="name" [(ngModel)]="model.name" placeholder="Your name(without any space).." >
   <p>{{ firstName }}</p>
     
-    <input type="button" class="btn btn-primary" value="Submit" (click)="checkForSpaces(model)">
+    <input type="button" class="btn btn-primary" value="Submit" (click)="DoLogin(model)">
   </form>
  
 </div>

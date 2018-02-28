@@ -5,8 +5,10 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes, ɵROUTER_PROVIDERS } from '@angular/router';
 import { ChatBoxComponent} from './chatbox/chatbox';
 import {HomeComponent} from './home/home';
+import {Http,HttpModule} from '@angular/http';
 import {HttpTestService} from './home.service';
-import {HttpModule} from '@angular/http';
+import {HttpClientModule} from '@angular/common/http';
+
 
 
 const appRoutes: Routes = [
@@ -29,6 +31,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [HttpTestService],
